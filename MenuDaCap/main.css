@@ -1,0 +1,70 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+section{
+width: 100%;
+height: 100vh;
+background:url(bien.jpg);
+background-size: cover;
+}
+.menutop{
+    position: absolute;
+    width: 100%;
+    background: rgb(255,255,255,.2);
+}
+.menutop ul.root{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+list-style: none;
+}
+.menutop ul.root> li:hover ul.submenu{
+  display: block;
+}
+.menutop ul.root> li{
+    float: left;
+    height: 50px;
+    position: relative;
+}
+.menutop ul.root> li> a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 50px;
+    padding: 0px 20px 0px 0px;
+}
+.menutop ul.root >li> a:hover{
+    background-color: cornflowerblue;
+    color: yellow;
+    opacity: 1;
+    visibility: visible;
+}
+.menutop ul.root>li ul.submenu{
+    margin: 0px;
+    padding: 0;
+    min-width: 150px;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    list-style-type: none;
+    position: absolute;
+  top: 50px;
+    transition: .5s;
+  
+    display: none;
+}
+.menutop ul.root>li ul.submenu li a{
+display: block;
+background: rgba(255,255,255,.1);
+min-width: auto;
+margin-top: 1px;
+box-shadow: 0 2px 5px rgba(0,0,0,.5);
+transition: .5s;
+line-height: 30px;
+text-decoration: none;
+}
+.menutop ul.root > li ul.submenu li a:hover{
+    background:rgb(197, 149, 45);
+}
