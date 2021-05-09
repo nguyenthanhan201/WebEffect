@@ -1,0 +1,108 @@
+<!-- https://www.youtube.com/watch?v=4m_0B7uJN7I -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style>
+    /* *,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+} */
+header.top-header{
+    background-image:url("./banner.jpg");
+    background-size: cover;
+    position: relative;
+    height: 700px;
+}
+body{
+	font-family: arial;
+	font-size: 16px;
+    margin: 0;
+    padding: 0;
+	background: #054d77;
+}
+.ware{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+svg path{
+	animation:pathAnim 7s; 
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+svg path:nth-child(2){
+	animation-delay: 1s
+}
+svg path:nth-child(3){
+	animation-delay: 3s
+}
+svg path:nth-child(4){
+	animation-play-state: paused;
+    /* animation-delay: 2s */
+}
+
+@keyframes pathAnim{
+	0%{
+		d: path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
+	}
+	25%{
+		d: path("M0,100	C220,100,440,292,660,292 C880,292,1100,100,1320,100	L1320 500 L0 500");
+	}
+	50%{
+		d: path("M0,192	C220,290,440,290,660,192 C880,100,1100,100,1320,192	L1320 500 L0 500");
+	}
+	75%{
+		d: path("M0,292	C220,292,440,100,660,100 C880,100,1100,292,1320,292	L1320 500 L0 500");
+	}
+	100%{
+		d: path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
+	}
+
+}
+</style>
+<body>
+    <header class="top-header">
+<svg class="ware" viewBox="0 0 1320 500">
+	<path fill-opacity="0.7" d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	" fill="#000"/>
+	<path fill-opacity="0.7" d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	" fill="#fff"/>
+	<path fill-opacity="0.7" d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	" fill="#ee5253"/>
+	<path fill-opacity="0.7" d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	" fill="#00d2d3"/>
+</svg>
+</header>
+
+
+
+</body>
+</html>
+
