@@ -1,0 +1,126 @@
+<!-- https://www.youtube.com/watch?v=IQmNWiEynhg&t=30s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Reaction Button Tutorial</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+<style>
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #container {
+        position: relative;
+        width: 320px;
+        margin: 50px auto;
+        height: 150px;
+        background-color: #f0f0f0;
+        padding: 50px;
+    }
+
+    #like-button {
+        position: absolute;
+        bottom: 102px;
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    #reactions {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        list-style-type: none;
+        padding: 10px 12px 8px;
+        border-radius: 20px;
+        height: 20px;
+    }
+
+    #reactions li a {
+        margin: 0 5px;
+        display: block;
+        transform: translateY(-4px);
+    }
+
+    #reactions li a:hover {
+        font-size: 44px;
+        transform: translateY(-40px);
+        animation: popup 300ms;
+    }
+
+    #like-button:hover+#reactions {
+        display: flex;
+        animation: mymove 500ms;
+    }
+
+    #reactions:hover {
+        display: flex;
+    }
+
+    #reactions li a:not(:hover) {
+        transform: translateY(-4px);
+        animation: popdown 300ms;
+    }
+
+    @keyframes popup {
+        0% {
+            font-size: 24pt;
+        }
+
+        50% {
+            font-size: 50pt;
+        }
+
+        100% {
+            font-size: 44pt;
+        }
+    }
+
+    @keyframes popdown {
+        0% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(-2px);
+        }
+    }
+
+    @keyframes mymove {
+        0% {
+            padding-left: 30px;
+            opacity: 0;
+        }
+
+        50% {
+            padding-left: 0px;
+            opacity: 0.5;
+        }
+
+        100% {
+            padding-left: 12px;
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <div id="container">
+        <a href="" id="like-button"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+        <ul id="reactions">
+            <li><a href="" title="like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+            <li><a href="" title="love"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+            <li><a href="" title="haha"><i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
+            <li><a href="" title="wow"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a></li>
+            <li><a href="" title="sad"><i class="fa fa-frown-o" aria-hidden="true"></i></a></li>
+            <li><a href="" title="grr"><i class="fa fa-ban" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
