@@ -1,0 +1,20 @@
+@mixin buttonStyle {
+    background: green;
+}
+
+header {
+    background: blue;
+}
+header button{
+    @include buttonStyle();
+}
+footer {
+    background: yellow;
+
+    button{
+        @include buttonStyle();
+    }
+    p {
+        font-size: 200px;
+    }
+}

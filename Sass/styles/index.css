@@ -1,0 +1,20 @@
+header {
+  background: blue;
+}
+
+header button {
+  background: green;
+}
+
+footer {
+  background: yellow;
+}
+
+footer button {
+  background: green;
+}
+
+footer p {
+  font-size: 200px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+<!-- https://www.youtube.com/watch?v=FdxpEmXfXYI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphissm Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Regular</h3>
+                <div class="price">$100</div>
+                <ul>
+                    <li>10 Websited</li>
+                    <li>30gb SSD</li>
+                    <li>Domain name</li>
+                </ul>
+                <a href="">Get Started</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Regular</h3>
+                <div class="price">$100</div>
+                <ul>
+                    <li>10 Websited</li>
+                    <li>30gb SSD</li>
+                    <li>Domain name</li>
+                </ul>
+                <a href="">Get Started</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Regular</h3>
+                <div class="price">$100</div>
+                <ul>
+                    <li>10 Websited</li>
+                    <li>30gb SSD</li>
+                    <li>Domain name</li>
+                </ul>
+                <a href="">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.card'),{
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        })
+    </script>
+</body>
+</html>
