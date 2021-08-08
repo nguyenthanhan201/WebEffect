@@ -1,0 +1,158 @@
+<!-- https://www.youtube.com/watch?v=5tVNFuKNsfw&t=1937s (32.13) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <!-- --FORM SECTION-- -->
+        <div class="row">
+            <!-- ---SIGN UP--- -->
+            <div class="col align-item-center flex-col sign-up">
+                <div class="form-wrapper ">
+                    <div class="form sign-up">
+                        <div class="input-group">
+                            <i class="bx bxs-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bx-mail-send"></i>
+                            <input type="password" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                        <button>
+                            Sign up
+                        </button>
+                        <p>
+                            <span>
+                                Already have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign in here
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="social-list align-item-center sign-up">
+                        <div class="align-item-center facebook-bg">
+                            <i class="bx bxl-facebook"></i>
+                        </div>
+                        <div class="align-item-center google-bg">
+                            <i class="bx bxl-google"></i>
+                        </div>
+                        <div class="align-item-center twitter-bg">
+                            <i class="bx bxl-twitter"></i>
+                        </div>
+                        <div class="align-item-center insta-bg">
+                            <i class="bx bxl-instagram-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---END SIGN UP--- -->
+            <!-- ---SIGN IN--- -->
+            <div class="col align-item-center flex-col sign-in">
+                <div class="form-wrapper">
+                    <div class="form sign-in">
+                        <div class="input-group">
+                            <i class="bx bxs-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button>
+                            Sign in
+                        </button>
+                        <p>
+                            <b>
+                                Forgot password?
+                            </b>
+                        </p>
+                        <p>
+                            <span>
+                                Don't have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign up here
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="social-list align-item-center sign-in">
+                        <div class="align-item-center facebook-bg">
+                            <i class="bx bxl-facebook"></i>
+                        </div>
+                        <div class="align-item-center google-bg">
+                            <i class="bx bxl-google"></i>
+                        </div>
+                        <div class="align-item-center twitter-bg">
+                            <i class="bx bxl-twitter"></i>
+                        </div>
+                        <div class="align-item-center insta-bg">
+                            <i class="bx bxl-instagram-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---END SIGN IP--- -->
+        </div>
+        <!-- --END FORM SECTION-- -->
+        <!-- --CONTENT SECTION-- -->
+        <div class="row content-row">
+            <!-- --SIGN IN CONTENT-- -->
+            <div class="col align-item-center flex-col">
+                <div class="text sign-in">
+                    <h2>
+                        Welcome back
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptates facere non dolores esse, consectetur aliquid aperiam molestiae eum est distinctio, recusandae, rem velit optio minus nobis autem. Itaque, voluptatem!
+                    </p>
+                </div>
+                <div class="img sign-in">
+                    <img src="./assets/undraw_different_love_a3rg.svg" alt="welcome">
+                </div>
+            </div>
+            <!-- --END SIGN IN CONTENT-- -->
+            <!-- --START SIGN UP CONTENT-- -->
+            <div class="col align-item-center flex-col">
+                <div class="img sign-up">
+                    <img src="./assets/undraw_creative_team_r90h.svg" alt="welcome">
+                </div>
+                <div class="text sign-up">
+                    <h2>
+                        Join with us
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptates facere non dolores esse, consectetur aliquid aperiam molestiae eum est distinctio, recusandae, rem velit optio minus nobis autem. Itaque, voluptatem!
+                    </p>
+                </div>
+            </div>
+            <!-- --END SIGN UP CONTENT-- -->
+        </div>
+        <!-- --END CONTENT SECTION-- -->
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
