@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quis ipsa voluptatibus a rerum doloribus similique hic iure qui itaque.</h2>
+            <img src="./taisiia-stupak-0fKMSXKi7sM-unsplash.jpg" alt="" style="width: 300px;">
+            <a href="#" onclick="toggle()">Read more</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2 style="width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, consectetur tempore? In, optio porro molestiae doloremque quos alias voluptatem deleniti itaque hic asperiores quasi consequuntur ipsum dolorem consequatur et harum voluptatum omnis deserunt corrupti esse ipsam quibusdam. Eligendi, sed excepturi aliquam quasi ullam ad rem sint ratione debitis ipsa laborum, neque sequi, quo unde? Itaque culpa ducimus obcaecati soluta delectus, beatae nulla veritatis assumenda velit facere vitae blanditiis repellendus corporis laudantium tenetur quibusdam ea sunt vero? Temporibus eum alias saepe quaerat, dolorum, ratione amet culpa est tempore eaque dolores deserunt nesciunt, commodi necessitatibus similique excepturi assumenda! Quibusdam deleniti eaque accusamus!</h2>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <script>
+        function toggle(){
+            var blur = document.querySelector('#blur');
+            blur.classList.toggle('active');
+            var popup = document.querySelector('#popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
