@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: wheat;
+}
+.scroll-bg{
+    background: blue;
+    width: 400px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 1rem;
+}
+.scroll-div{
+    width: 400px;
+    background: blue;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: wheat;
+    font-family: cursive;
+    font-size: 15px;
+}
