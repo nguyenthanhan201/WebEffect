@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More vs Read Less</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: #dfe6e9;
+        padding: 1rem;
+        font-family: cursive;
+    }
+    .read-more-container{
+        display: flex;
+        flex-direction: column;
+        color: #111;
+    }
+    .container{
+        padding: 2rem;
+        background: #fff;
+        border-radius: 2px;
+        line-height: 1.4rem;
+        box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    }
+    .read-more-btn{
+        color: blue;
+    }
+    .read-more-text{
+        display: none;
+    }
+    .read-more-text--show{
+        display: block;
+    }
+</style>
+<body>
+    <div class="read-more-container">
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quam itaque distinctio fugit similique nam culpa illo, assumenda tempore quis nesciunt ea magni delectus soluta harum eos praesentium sequi iusto.
+                <span class="read-more-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quisquam iure natus id voluptatibus animi distinctio exercitationem alias aliquid. Accusantium amet voluptatum a numquam eaque labore tempore? Adipisci, et quibusdam.
+                </span>
+            </p>
+            <span class="read-more-btn">Read More...</span>
+        </div>
+    </div>
+
+    <script>
+        const read_more_btn = document.querySelector('.read-more-btn');
+        const read_more_text = document.querySelector('.read-more-text');
+
+        read_more_btn.addEventListener('click', ()=>{
+            read_more_text.classList.toggle('read-more-text--show');
+
+            read_more_btn.innerHTML = read_more_btn.innerHTML.includes('Read More') ?
+            "Read Less..."+"<i class="+"fa fa-address-book-o"+"></i>" : "Read More...";
+        })
+    </script>
+</body>
+</html>
