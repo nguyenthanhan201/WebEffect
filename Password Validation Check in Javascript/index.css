@@ -1,0 +1,35 @@
+#open-eye {
+  display: none;
+}
+#open-eye.active {
+  display: block;
+}
+#close-eye {
+  display: none;
+}
+#close-eye.active {
+  display: block;
+}
+ul li {
+  list-style: none;
+  position: relative;
+}
+ul li::before {
+  content: "\f192";
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: inline-flex;
+  transition: opacity 0.3s;
+}
+ul li.vail::before {
+  content: "\f00c";
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: inline-flex;
+  color: greenyellow;
+  transition: opacity 0.3s;
+}
